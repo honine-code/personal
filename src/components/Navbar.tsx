@@ -5,7 +5,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 const CustomNavbar: React.FC = () => {
     return (
         <Navbar bg="dark" variant="dark" expand="lg">
-            <Navbar.Brand href="#home">My Portfolio</Navbar.Brand>
+            <Navbar.Brand href="/">My Portfolio</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
