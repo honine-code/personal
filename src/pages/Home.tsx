@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Home.css';
 
 const Home: React.FC = () => {
@@ -37,21 +38,27 @@ const Home: React.FC = () => {
                         <div className="project-card p-3 bg-light rounded">
                             <h3>Project One</h3>
                             <p>준비중</p>
-                            <Button variant="secondary" href="#">View Project</Button>
+                            <Link to="/projects/1">
+                                <Button variant="secondary">View Project</Button>
+                            </Link>
                         </div>
                     </Col>
                     <Col md={4} className="my-3">
                         <div className="project-card p-3 bg-light rounded">
                             <h3>Project Two</h3>
                             <p>준비중</p>
-                            <Button variant="secondary" href="#">View Project</Button>
+                            <Link to="/projects/2">
+                                <Button variant="secondary">View Project</Button>
+                            </Link>
                         </div>
                     </Col>
                     <Col md={4} className="my-3">
                         <div className="project-card p-3 bg-light rounded">
                             <h3>Project Three</h3>
                             <p>준비중</p>
-                            <Button variant="secondary" href="#">View Project</Button>
+                            <Link to="/projects/3">
+                                <Button variant="secondary">View Project</Button>
+                            </Link>
                         </div>
                     </Col>
                 </Row>
