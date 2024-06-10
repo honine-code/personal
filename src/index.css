@@ -1,35 +1,82 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .hero-section {
+  /*background-image: url('/images/hero-image.jpg');*/
   background-size: cover;
   background-position: center;
   color: white;
   text-align: center;
   padding: 100px 0;
+  position: relative;
+  margin: 0;
 }
 
-.about-section img {
-  max-width: 100%;
-  height: auto;
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* 어두운 오버레이 */
+  z-index: 1;
 }
 
-.project-card {
+.hero-section > .container-fluid {
+  position: relative;
+  z-index: 2;
+}
+
+.about-section {
+  background-color: #f8f9fa;
+  padding: 100px 0;
+  margin: 0;
+}
+
+.skills-section {
+  background-color: #e9ecef;
+  padding: 100px 0;
+  margin: 0;
+}
+
+.project-card, .skill-card {
   transition: transform 0.2s;
 }
 
-.project-card:hover {
+.project-card:hover, .skill-card:hover {
   transform: translateY(-10px);
 }
 
+.projects-section {
+  background-color: #f8f9fa;
+  padding: 100px 0;
+  margin: 0;
+}
+
+.contact-section {
+  background-color: #e9ecef;
+  padding: 100px 0;
+  margin: 0;
+}
+
+.contact-section form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card {
+  transition: transform 0.2s;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+}
