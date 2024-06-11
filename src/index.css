@@ -34,10 +34,37 @@ body {
   z-index: 2;
 }
 
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.section-divider {
+  width: 100px;
+  height: 3px;
+  background-color: #000;
+  margin: 0 auto 20px;
+}
+
 .about-section {
   background-color: #f8f9fa;
   padding: 100px 0;
   margin: 0;
+}
+
+.about-item {
+  margin-bottom: 20px;
+}
+
+.about-item-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.about-item-text {
+  font-size: 1rem;
+  color: #666;
 }
 
 .skills-section {
@@ -79,4 +106,65 @@ body {
 
 .skill-card:hover {
   transform: translateY(-10px);
+}
+
+/* 미디어 쿼리 */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 50px 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-divider {
+    width: 80px;
+  }
+
+  .about-item-title {
+    font-size: 1.1rem;
+  }
+
+  .about-item-text {
+    font-size: 0.9rem;
+  }
+
+  .skills-section, .projects-section, .contact-section {
+    padding: 50px 0;
+  }
+
+  .skill-card, .project-card {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 30px 0;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .section-divider {
+    width: 60px;
+  }
+
+  .about-item-title {
+    font-size: 1rem;
+  }
+
+  .about-item-text {
+    font-size: 0.8rem;
+  }
+
+  .skills-section, .projects-section, .contact-section {
+    padding: 30px 0;
+  }
+
+  .skill-card, .project-card {
+    margin-bottom: 15px;
+  }
 }

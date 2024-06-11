@@ -21,44 +21,46 @@ const Home: React.FC = () => {
 
       {/* About Section */}
       <Container fluid className="about-section" id="about">
-        <h2 className="text-center">ABOUT ME</h2>
+        <h2 className="text-center section-title">ABOUT ME</h2>
+        <hr className="section-divider" />
         <Row className="justify-content-center">
-          <Col md={2} className="text-center">
-            <FontAwesomeIcon icon={faUser} size="2x" />
-            <h5>이름</h5>
-            <p>이동현</p>
+          <Col md={2} className="text-center about-item">
+            <FontAwesomeIcon icon={faUser} size="2x" className="mb-2" />
+            <h5 className="about-item-title">이름</h5>
+            <p className="about-item-text">이동현</p>
           </Col>
-          <Col md={2} className="text-center">
-            <FontAwesomeIcon icon={faCalendar} size="2x" />
-            <h5>생년월일</h5>
-            <p>94.04.30</p>
+          <Col md={2} className="text-center about-item">
+            <FontAwesomeIcon icon={faCalendar} size="2x" className="mb-2" />
+            <h5 className="about-item-title">생년월일</h5>
+            <p className="about-item-text">94.04.30</p>
           </Col>
-          <Col md={2} className="text-center">
-            <FontAwesomeIcon icon={faMapMarkerAlt} size="2x" />
-            <h5>주소지</h5>
-            <p>인천광역시 부평구</p>
+          <Col md={2} className="text-center about-item">
+            <FontAwesomeIcon icon={faMapMarkerAlt} size="2x" className="mb-2" />
+            <h5 className="about-item-title">주소지</h5>
+            <p className="about-item-text">인천광역시 부평구</p>
           </Col>
-          <Col md={2} className="text-center">
-            <FontAwesomeIcon icon={faPhone} size="2x" />
-            <h5>연락처</h5>
-            <p>010-9282-7263</p>
+          <Col md={2} className="text-center about-item">
+            <FontAwesomeIcon icon={faPhone} size="2x" className="mb-2" />
+            <h5 className="about-item-title">연락처</h5>
+            <p className="about-item-text">010-9282-7263</p>
           </Col>
-          <Col md={2} className="text-center">
-            <FontAwesomeIcon icon={faEnvelope} size="2x" />
-            <h5>이메일</h5>
-            <p>lhidns.dev@gmail.com</p>
+          <Col md={2} className="text-center about-item">
+            <FontAwesomeIcon icon={faEnvelope} size="2x" className="mb-2" />
+            <h5 className="about-item-title">이메일</h5>
+            <p className="about-item-text">lhidns.dev@gmail.com</p>
           </Col>
-          <Col md={2} className="text-center">
-            <FontAwesomeIcon icon={faGraduationCap} size="2x" />
-            <h5>학력</h5>
-            <p>유한대학교<br /> (컴퓨터소프트웨어과)</p>
+          <Col md={2} className="text-center about-item">
+            <FontAwesomeIcon icon={faGraduationCap} size="2x" className="mb-2" />
+            <h5 className="about-item-title">학력</h5>
+            <p className="about-item-text">유한대학교<br /> (컴퓨터소프트웨어과)</p>
           </Col>
         </Row>
       </Container>
 
       {/* Skills Section */}
       <Container fluid className="skills-section" id="skills">
-        <h2 className="text-center">Skills</h2>
+        <h2 className="text-center section-title">Skills</h2>
+        <hr className="section-divider" />
         <Row>
           <Col md={4} className="my-3">
             <div className="skill-card p-3 bg-light rounded">
@@ -83,7 +85,8 @@ const Home: React.FC = () => {
 
       {/* Projects Section */}
       <Container fluid className="projects-section" id="projects">
-        <h2 className="text-center">My Projects</h2>
+        <h2 className="text-center section-title">My Projects</h2>
+        <hr className="section-divider" />
         <Row>
           <Col md={4} className="my-3">
             <div className="project-card p-3 bg-light rounded">
@@ -111,7 +114,8 @@ const Home: React.FC = () => {
 
       {/* Contact Section */}
       <Container fluid className="contact-section" id="contact">
-        <h2 className="text-center">Contact Me</h2>
+        <h2 className="text-center section-title">Contact Me</h2>
+        <hr className="section-divider" />
         <Row className="justify-content-center">
           <Col md={6}>
             <form>
