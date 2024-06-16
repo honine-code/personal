@@ -165,6 +165,17 @@ const Home: React.FC = () => {
             </Col>
           </Row>
         </Container>
+
+        {/* Footer Section */}
+        <footer className="footer-section">
+          <Container fluid>
+            <Row>
+              <Col className="text-center py-3">
+                <p>© 2024 Lee Donghyeon. All Rights Reserved.</p>
+              </Col>
+            </Row>
+          </Container>
+        </footer>
       </div>
   );
 };
