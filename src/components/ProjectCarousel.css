@@ -1,0 +1,26 @@
+.carousel-container {
+    position: relative;
+}
+
+.carousel-slide {
+    position: relative;
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.slide-number {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
